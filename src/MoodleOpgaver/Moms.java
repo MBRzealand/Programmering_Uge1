@@ -48,7 +48,7 @@ class Moms {
 
         } else {
 
-            System.out.println("Language country not supported");
+            System.out.println("Country not supported");
 
         }
 
