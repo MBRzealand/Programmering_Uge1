@@ -1,7 +1,8 @@
-import java.lang.Math;
+import java.util.Scanner;
 
 
-class placeholder {
+class placeholder{
+
 
 
 }
