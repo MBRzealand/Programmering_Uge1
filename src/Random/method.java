@@ -1,22 +1,9 @@
-package Kapitel2;
+package Random;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
 
-class Opgave2_8 {
-
-    public static void main(String[] args) {
-
-        System.out.println("Enter GMT: ");
-        Scanner input = new Scanner(System.in);
-        String gmt = input.nextLine();
-        System.out.println(Time(gmt));
-
-    }
-
-
-    //-------------------------------------------
+class method {
 
     static String Time(String gmt) {
 
