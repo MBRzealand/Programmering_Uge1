@@ -20,10 +20,10 @@ class InSchool extends TimerTask {
         String time = dtf.format(now);
         String[] timeSplit = time.split(":");
 
-        if(Integer.parseInt(timeSplit[0]) < 15) {
+        if (Integer.parseInt(timeSplit[0]) < 15) {
             System.out.println("the time is " + time + " you are in school");
 
-        }else {
+        } else {
             System.out.println("the time is " + time + " you're not in school");
         }
     }
@@ -39,10 +39,7 @@ class InSchool extends TimerTask {
     public static void main(String[] args) {
 
 
-
     }
-
 }
-
 
 

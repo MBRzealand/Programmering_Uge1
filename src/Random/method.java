@@ -3,7 +3,7 @@ package Random;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-class method {
+class Method {
 
     static String Time(String gmt) {
 

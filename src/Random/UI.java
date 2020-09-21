@@ -9,7 +9,7 @@ class UI {
         System.out.println("Enter GMT: ");
         Scanner input = new Scanner(System.in);
         String gmt = input.nextLine();
-        System.out.println(method.Time(gmt));
+        System.out.println(Method.Time(gmt));
 
     }
 
