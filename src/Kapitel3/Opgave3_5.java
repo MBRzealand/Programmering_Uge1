@@ -5,7 +5,6 @@ import java.util.Scanner;
 class Opgave3_5 {
 
     static Scanner input = new Scanner(System.in);
-
     static int input1 = input.nextInt();
     static int input2 = input.nextInt();
 
@@ -25,3 +24,4 @@ class Opgave3_5 {
     }
 
 }
+

@@ -1,8 +1,5 @@
 import java.util.Scanner;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.lang.Math;
 
 class placeholder {
 
@@ -10,38 +7,50 @@ class placeholder {
 }
 
 
-
-
-class InSchool extends TimerTask {
-
-    static void time() {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-
-        String time = dtf.format(now);
-        String[] timeSplit = time.split(":");
-
-        if (Integer.parseInt(timeSplit[0]) < 15) {
-            System.out.println("the time is " + time + " you are in school");
-
-        } else {
-            System.out.println("the time is " + time + " you're not in school");
-        }
-    }
-
-
-    public void run() {
-
-        time();
-
-    }
-
+class Opgave3_3{
 
     public static void main(String[] args) {
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a, b, c, d, e, f: ");
+        String rawData = input.nextLine();
+        String[] splitData = rawData.split(" ");
+        System.out.println(linearEquation(splitData));
 
     }
+
+    static String linearEquation(String[] splitData){
+
+        double a = Double.parseDouble(splitData[0]);
+        double b = Double.parseDouble(splitData[1]);
+        double c = Double.parseDouble(splitData[2]);
+        double d = Double.parseDouble(splitData[3]);
+        double e = Double.parseDouble(splitData[4]);
+        double f = Double.parseDouble(splitData[5]);
+
+        double x = ((e*d)-(b*f))/((a*d)-(b*c));
+        double y = ((a*f)-(e*c))/((a*d)-(b*c));
+
+        if(((a*d)-(b*c)) == 0) {
+            return "x is " + x + " and y is " + y;
+
+        }else{
+            return "the equation has no solution";
+        }
+
+    }
+
+
+
+
+
 }
 
+
+
+
+
+
+
+}
 
 
