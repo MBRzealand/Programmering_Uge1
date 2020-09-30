@@ -51,6 +51,9 @@ class Opgave2_13WayOverkill {
     public static void main(String[] args) {
 
         System.out.println(interest());
+        System.out.println(interest());
+        System.out.println(interest());
+
 
     }
 
