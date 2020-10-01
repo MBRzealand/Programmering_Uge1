@@ -42,7 +42,7 @@ class Opgave5_1_Test{
         //testcase 1, input = 80:
         //expected output = You pass the examn.
         System.out.println("Testcase 1:");
-        if (Opgave5_1.passOrFail(80) == Opgave5_1.pass){
+        if (Opgave5_1.passOrFail(80).equals(Opgave5_1.pass)){
             System.out.println("TEST SUCESSFUL");
         } else {
             System.out.println("TEST FAILED");
@@ -51,7 +51,7 @@ class Opgave5_1_Test{
         // testcase 2, input = 59:
         // expected output = You don't pass the exam.
         System.out.println("Testcase 2:");
-        if (Opgave5_1.passOrFail(59) == Opgave5_1.fail){
+        if (Opgave5_1.passOrFail(59).equals(Opgave5_1.fail)){
             System.out.println("TEST SUCESSFUL");
         } else {
             System.out.println("TEST FAILED");
@@ -60,7 +60,7 @@ class Opgave5_1_Test{
         // testcase 3, input = -1:
         // expected output = Number not between 0 and 100
         System.out.println("Testcase 3:");
-        if(Opgave5_1.passOrFail(-1) == Opgave5_1.undefined){
+        if(Opgave5_1.passOrFail(-1).equals(Opgave5_1.undefined)){
             System.out.println("TEST SUCESSFUL");
         }else{
             System.out.println("TEST FAILED");
