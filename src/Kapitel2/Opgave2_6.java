@@ -26,7 +26,7 @@ class Opgave2_6 {
 
     public static void main(String[] args) {
 
-        System.out.println(digitMultiply());
+        System.out.printf(digitMultiply());
 
 
     }
