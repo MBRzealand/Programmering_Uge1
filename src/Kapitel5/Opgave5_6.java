@@ -77,8 +77,8 @@ class Opgave5_6_Test {
 
         System.out.println("Testcase 1:");
 
-        if ((Opgave5_6.pingToSQM(10) == 33.05785)
-                && (Opgave5_6.sqmToPing(30) == 9.07500033)) {
+        if ((Opgave5_6.pingToSQM(10.0) == 33.05785)
+                && (Opgave5_6.sqmToPing(30.0) == 9.07500033)) {
             System.out.println("TEST SUCESSFUL\n");
         } else {
             System.out.println("TEST FAILED\n");
@@ -87,43 +87,17 @@ class Opgave5_6_Test {
         // test case 2: input Ping = 15, input SQM = 35
         //expected output =
         // Ping			SQM       |       SQM       Ping
-        // 2            35.600    |       25        -3.889
+        // 15           49.587    |       35        10.588
 
         System.out.println("Testcase 2:");
 
-        if ((Opgave5_5.celsiusToFarenheit(2) == 35.6)
-                && (Opgave5_5.farenheitToCelsius(25) == (-3 + (-8/9.0)) )) {
+        if ((Opgave5_6.pingToSQM(15.0) == 49.586775)
+                && (Opgave5_6.sqmToPing(35.0) == 10.5875004)) {
             System.out.println("TEST SUCESSFUL\n");
         } else {
             System.out.println("TEST FAILED\n");
         }
 
-        // test case 2: input celsius = 98, input farenheit = 265
-        //expected output =
-        // Celsius			Farenheit       |       Farenheit       Celsius
-        // 98               208.400         |       265             129.444
-
-        System.out.println("Testcase 3:");
-
-        if ((Opgave5_5.celsiusToFarenheit(98) == 208.4)
-                && ( Opgave5_5.farenheitToCelsius(265) == 129 + 4/9.0)) {
-            System.out.println("TEST SUCESSFUL\n");
-        } else {
-            System.out.println("TEST FAILED\n");
-        }
-
-        // test case 2: input celsius = 100, input farenheit = 270
-        //expected output =
-        // Celsius			Farenheit       |       Farenheit       Celsius
-        // 100              212.000         |       270             132.222
-
-        System.out.println("Testcase 4:");
-
-        if ((Opgave5_5.celsiusToFarenheit(100) == 212.0) && ( Opgave5_5.farenheitToCelsius(270) == 132 + 2/9.0 )) {
-            System.out.println("TEST SUCESSFUL\n");
-        } else {
-            System.out.println("TEST FAILED\n");
-        }
 
 
     }
